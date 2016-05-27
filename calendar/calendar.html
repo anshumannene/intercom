@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar</title>
+  <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+  <div class="m-container container"></div>
+
+  <script id="calendar-template" type="text/x-handlebars-template">
+    <div class="m-calendar calendar">
+      <div class="header">
+        <span class="date col">Date</span>
+        <span class="occasion col">Occassion</span>
+        <span class="count col">Number of invitees</span>
+      </div>
+      {{#each events}}
+        <div class="event{{#if cancelled}} strike{{/if}}">
+          <span class="date col">{{formatDate year month day}}</span>
+          <span class="occasion col">{{occasion}}</span>
+          <span class="count col">{{invited_count}}</span>
+        </div>
+      {{/each}}
+    </div>
+  </script>
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/handlebars.js"></script>
+  <script src="js/calendar.js"></script>
+</body>
+</html>

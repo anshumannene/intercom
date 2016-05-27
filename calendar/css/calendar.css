@@ -1,0 +1,56 @@
+.container {
+  margin: 5% 10%;
+  border: 1px solid #d7d7d7;
+  width: 80%;
+}
+
+.calendar {
+  margin: 25px;
+}
+
+.header {
+  background-color: #d7d7d7;
+  margin: 10px 10px 0;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.event {
+  margin: 0 10px 10px;
+  padding: 10px 0;
+  background-color: #bef5d4;
+}
+
+.date {
+  width: 30%;
+}
+
+.occasion {
+  width: 45%;
+}
+
+.count {
+  width: 17%;
+  text-align: right;
+}
+
+.col {
+  padding: 0 10px;
+  font-size: 18px;
+  font-family: arial;
+  display: inline-block;
+}
+
+.strike {
+  position: relative;
+}
+
+.strike::before {
+  position: absolute;
+  content: "";
+  left: -5px;
+  top: 50%;
+  right: -5px;
+  border-top: 1px solid;
+  border-color: inherit;
+}
